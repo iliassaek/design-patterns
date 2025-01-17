@@ -1,6 +1,6 @@
 package strategy;
 
 public interface Duck {
-    void quack();
-    void fly();
+    String quack();
+    String fly();
 }

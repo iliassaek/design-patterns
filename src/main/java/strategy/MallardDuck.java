@@ -2,12 +2,12 @@ package strategy;
 
 public class MallardDuck implements Duck{
     @Override
-    public void quack() {
-        System.out.println("quack quack");
+    public String quack() {
+        return "MallardDuck --> quack quack";
     }
 
     @Override
-    public void fly() {
-        System.out.println("fly fly");
+    public String fly() {
+        return "MallardDuck --> fly fly";
     }
 }
