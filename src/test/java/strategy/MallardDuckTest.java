@@ -7,11 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MallardDuckTest {
     @Test
-    void test(){
+    void malardduck_can_quack(){
         Duck mallardDuck = new MallardDuck();
-
         String quack = mallardDuck.quack();
-        assertEquals(quack,"MallardDuck --> quack quack" );
-
+        assertEquals(quack,MallardDuck.QUACK_QUACK );
     }
+
 }
