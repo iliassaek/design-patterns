@@ -25,4 +25,11 @@ class MallardDuckTest {
         String quack = duck.quack();
         assertThat(quack, is(RedHeadDuck.QUACK_QUACK));
     }
+
+    @Test
+    void redHeadDuck_can_fly() {
+        Duck duck = new RedHeadDuck();
+        String fly= duck.fly();
+        assertThat(fly, is(RedHeadDuck.FLY_FLY));
+    }
 }
