@@ -13,4 +13,11 @@ class MallardDuckTest {
         assertEquals(quack,MallardDuck.QUACK_QUACK );
     }
 
+    @Test
+    void malardduck_can_fly(){
+        Duck mallardDuck = new MallardDuck();
+        String fly = mallardDuck.fly();
+        assertEquals(fly, MallardDuck.FLY_FLY);
+    }
+
 }
