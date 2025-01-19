@@ -1,23 +1,21 @@
 package strategy;
 
 import org.junit.jupiter.api.Test;
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
 class MallardDuckTest {
     @Test
     void malardduck_can_quack(){
         Duck mallardDuck = new MallardDuck();
         String quack = mallardDuck.quack();
-        assertEquals(quack,MallardDuck.QUACK_QUACK );
+        assertThat(quack,is(MallardDuck.QUACK_QUACK) );
     }
 
     @Test
     void malardduck_can_fly(){
         Duck mallardDuck = new MallardDuck();
         String fly = mallardDuck.fly();
-        assertEquals(fly, MallardDuck.FLY_FLY);
+        assertThat(fly, is(MallardDuck.FLY_FLY));
     }
-
 }
