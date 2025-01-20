@@ -30,6 +30,13 @@ class MallardDuckTest {
     void redHeadDuck_can_fly() {
         Duck duck = new RedHeadDuck();
         String fly= duck.fly();
-        assertThat(fly, is(RedHeadDuck.FLY_FLY));
+        assertThat(fly, is("default fly behavior: fly fly"));
+    }
+
+    @Test
+    void redHeadDuck_can_fly_with_jetpack(){
+        Duck duck = new RedHeadDuck(new JetPack());
+        String fly = duck.fly();
+        assertThat(fly, is("Flying with jet pack voooof"));
     }
 }
