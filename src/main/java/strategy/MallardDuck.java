@@ -1,15 +1,17 @@
 package strategy;
 
 public class MallardDuck implements Duck{
-
-    public static final String FLY_FLY = "MallardDuck --> fly fly";
-
+    //TODO: make dependencies final
     private QuackBehavior quackBehavior;
     private FlyBehavior flyBehavior;
 
     public MallardDuck(){
         quackBehavior = new DefaultQuackBehavior();
         flyBehavior = new DefaultFlyBehavior();
+    }
+
+    public MallardDuck(FlyBehavior flyBehavior){
+        this.flyBehavior = flyBehavior;
     }
 
     @Override

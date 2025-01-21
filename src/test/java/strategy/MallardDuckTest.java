@@ -20,6 +20,13 @@ class MallardDuckTest {
     }
 
     @Test
+    void malardduck_can_fly_with_jetpack(){
+        Duck mallardDuck = new MallardDuck(new JetPack());
+        String fly = mallardDuck.fly();
+        assertThat(fly, is(Constants.FLY_WITH_JET_PACK));
+    }
+
+    @Test
     void redHeadDuck_can_quack() {
         Duck duck = new RedHeadDuck();
         String quack = duck.quack();
