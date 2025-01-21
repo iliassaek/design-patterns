@@ -5,9 +5,11 @@ public class MallardDuck implements Duck{
     public static final String FLY_FLY = "MallardDuck --> fly fly";
 
     private QuackBehavior quackBehavior;
+    private FlyBehavior flyBehavior;
 
     public MallardDuck(){
         quackBehavior = new DefaultQuackBehavior();
+        flyBehavior = new DefaultFlyBehavior();
     }
 
     @Override
@@ -17,6 +19,6 @@ public class MallardDuck implements Duck{
 
     @Override
     public String fly() {
-        return FLY_FLY;
+        return flyBehavior.fly();
     }
 }

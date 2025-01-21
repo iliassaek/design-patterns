@@ -16,7 +16,7 @@ class MallardDuckTest {
     void malardduck_can_fly(){
         Duck mallardDuck = new MallardDuck();
         String fly = mallardDuck.fly();
-        assertThat(fly, is(MallardDuck.FLY_FLY));
+        assertThat(fly, is(Constants.DEFAULT_FLY));
     }
 
     @Test
