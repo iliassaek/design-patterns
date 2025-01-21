@@ -4,6 +4,6 @@ public class JetPack implements FlyBehavior{
 
     @Override
     public String fly() {
-        return "Flying with jet pack voooof";
+        return Constants.FLY_WITH_JET_PACK;
     }
 }

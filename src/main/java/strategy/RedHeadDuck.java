@@ -1,7 +1,6 @@
 package strategy;
 
 public class RedHeadDuck implements Duck{
-
     private FlyBehavior flyBehavior;
     private QuackBehavior quackBehabior;
 
