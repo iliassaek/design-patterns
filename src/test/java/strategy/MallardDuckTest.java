@@ -39,4 +39,12 @@ class MallardDuckTest {
         String fly = duck.fly();
         assertThat(fly, is("Flying with jet pack voooof"));
     }
+
+    @Test
+    void redHeadDuck_can_quack_too_hard(){
+        Duck duck = new RedHeadDuck(new JetPack(), new HardQuack());
+        String quack= duck.quack();
+        assertThat(quack, is("Qacking hard: QUACK QUAAAAAAAAAAAAACK"));
+
+    }
 }
