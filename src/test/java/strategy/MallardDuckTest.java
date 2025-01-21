@@ -62,6 +62,8 @@ class MallardDuckTest {
     void redHeadDuck_can_quack_too_hard(){
         Duck duck = new RedHeadDuck(new JetPack(), new HardQuack());
         String quack= duck.quack();
+        String fly = duck.fly();
         assertThat(quack, is(Constants.QUACK_HARD));
+        assertThat(fly,is(Constants.FLY_WITH_JET_PACK));
     }
 }
