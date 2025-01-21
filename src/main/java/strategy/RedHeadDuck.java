@@ -1,8 +1,6 @@
 package strategy;
 
 public class RedHeadDuck implements Duck{
-    public static final String QUACK_QUACK = "Default Quack Behavior: Quack quack";
-    public static final String FLY_FLY = "Red head duck is flying .....";
 
     private FlyBehavior flyBehavior;
     private QuackBehavior quackBehabior;

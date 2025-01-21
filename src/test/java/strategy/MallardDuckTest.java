@@ -23,28 +23,27 @@ class MallardDuckTest {
     void redHeadDuck_can_quack() {
         Duck duck = new RedHeadDuck();
         String quack = duck.quack();
-        assertThat(quack, is(RedHeadDuck.QUACK_QUACK));
+        assertThat(quack, is(Constants.DEFAULT_QUACK));
     }
 
     @Test
     void redHeadDuck_can_fly() {
         Duck duck = new RedHeadDuck();
         String fly= duck.fly();
-        assertThat(fly, is("default fly behavior: fly fly"));
+        assertThat(fly, is(Constants.DEFAULT_FLY));
     }
 
     @Test
     void redHeadDuck_can_fly_with_jetpack(){
         Duck duck = new RedHeadDuck(new JetPack());
         String fly = duck.fly();
-        assertThat(fly, is("Flying with jet pack voooof"));
+        assertThat(fly, is(Constants.FLY_WITH_JET_PACK));
     }
 
     @Test
     void redHeadDuck_can_quack_too_hard(){
         Duck duck = new RedHeadDuck(new JetPack(), new HardQuack());
         String quack= duck.quack();
-        assertThat(quack, is("Qacking hard: QUACK QUAAAAAAAAAAAAACK"));
-
+        assertThat(quack, is(Constants.QUACK_HARD));
     }
 }
