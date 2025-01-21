@@ -9,7 +9,7 @@ class MallardDuckTest {
     void malardduck_can_quack(){
         Duck mallardDuck = new MallardDuck();
         String quack = mallardDuck.quack();
-        assertThat(quack,is(MallardDuck.QUACK_QUACK) );
+        assertThat(quack,is(Constants.DEFAULT_QUACK) );
     }
 
     @Test
