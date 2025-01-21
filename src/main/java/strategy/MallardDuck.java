@@ -6,11 +6,16 @@ public class MallardDuck implements Duck{
     private FlyBehavior flyBehavior;
 
     public MallardDuck(){
-        quackBehavior = new DefaultQuackBehavior();
-        flyBehavior = new DefaultFlyBehavior();
+        this.quackBehavior = new DefaultQuackBehavior();
+        this.flyBehavior = new DefaultFlyBehavior();
     }
 
     public MallardDuck(FlyBehavior flyBehavior){
+        this.flyBehavior = flyBehavior;
+    }
+
+    public MallardDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
         this.flyBehavior = flyBehavior;
     }
 
