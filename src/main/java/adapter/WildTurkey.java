@@ -6,4 +6,9 @@ public class WildTurkey implements Turkey{
     public String gobble() {
         return GOBBLING;
     }
+
+    @Override
+    public String fly() {
+        return "Flying for short distance";
+    }
 }

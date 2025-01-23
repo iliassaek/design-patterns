@@ -13,4 +13,11 @@ public class AdapterTest {
         String gobble = turkey.gobble();
         assertThat(gobble, is(GOBBLING));
     }
+
+    @Test
+    void turkey_fly_short_distance(){
+        Turkey turkey = new WildTurkey();
+        String fly = turkey.fly();
+        assertThat(fly, is("Flying for short distance"));
+    }
 }
