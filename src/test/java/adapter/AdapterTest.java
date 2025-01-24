@@ -20,4 +20,11 @@ public class AdapterTest {
         String fly = turkey.fly();
         assertThat(fly, is("Flying for short distance"));
     }
+
+    @Test
+    void turkey_can_quack(){
+        Duck turkeyAdapter = new TurkeyAdapter();
+        String quack = turkeyAdapter.quack();
+        assertThat(quack, is(GOBBLING));
+    }
 }
