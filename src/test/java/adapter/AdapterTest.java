@@ -27,4 +27,11 @@ public class AdapterTest {
         String quack = turkeyAdapter.quack();
         assertThat(quack, is(GOBBLING));
     }
+
+    @Test
+    void turkey_can_fly_long_distance(){
+        TurkeyAdapter turkeyAdapter = new TurkeyAdapter();
+        String fly = turkeyAdapter.fly();
+        assertThat(fly, is("turkey can fly long distance"));
+    }
 }

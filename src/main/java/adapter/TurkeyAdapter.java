@@ -11,4 +11,9 @@ public class TurkeyAdapter implements Duck{
     public String quack() {
         return turkey.gobble();
     }
+
+    @Override
+    public String fly() {
+        return "turkey can fly long distance";
+    }
 }
