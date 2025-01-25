@@ -32,6 +32,6 @@ public class AdapterTest {
     void turkey_can_fly_long_distance(){
         TurkeyAdapter turkeyAdapter = new TurkeyAdapter();
         String fly = turkeyAdapter.fly();
-        assertThat(fly, is("turkey can fly long distance"));
+        assertThat(fly, is("Flying for short distance...Flying for short distance...Flying for short distance..."));
     }
 }

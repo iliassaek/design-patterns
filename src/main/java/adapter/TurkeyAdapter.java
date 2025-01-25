@@ -14,6 +14,10 @@ public class TurkeyAdapter implements Duck{
 
     @Override
     public String fly() {
-        return "turkey can fly long distance";
+        String result ="";
+        for (int i=0; i<3;i++){
+            result += turkey.fly()+ "...";
+        }
+        return result;
     }
 }
