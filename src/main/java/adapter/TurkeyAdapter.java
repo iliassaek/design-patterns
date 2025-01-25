@@ -14,10 +14,10 @@ public class TurkeyAdapter implements Duck{
 
     @Override
     public String fly() {
-        String result ="";
+        var builder = new StringBuilder();
         for (int i=0; i<3;i++){
-            result += turkey.fly()+ "...";
+            builder.append(turkey.fly()).append("...");
         }
-        return result;
+        return builder.toString();
     }
 }
