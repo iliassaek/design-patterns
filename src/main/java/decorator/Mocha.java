@@ -1,7 +1,9 @@
 package decorator;
 
+import static decorator.Constants.MOCHA_PRICE;
+
 public class Mocha {
     public Double cost() {
-        return 0.5;
+        return MOCHA_PRICE;
     }
 }
