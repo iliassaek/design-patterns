@@ -16,7 +16,7 @@ public class StarBuzzTest {
     @Test
     void espresso_has_the_right_price(){
         Beverage espresso = new Espresso();
-        assertThat(espresso.cost(),is(1.));
+        assertThat(espresso.cost(),is(Constants.ESPRESSO_PRICE));
     }
 
 }
