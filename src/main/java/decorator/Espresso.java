@@ -1,6 +1,6 @@
 package decorator;
 
-public class Espresso implements Beverage {
+public class Espresso extends Beverage {
 
     @Override
     public Double cost() {

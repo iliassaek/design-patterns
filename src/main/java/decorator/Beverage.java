@@ -1,5 +1,5 @@
 package decorator;
 
-public interface Beverage {
-    Double cost();
+public abstract class Beverage {
+    public abstract Double cost();
 }

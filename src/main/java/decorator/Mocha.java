@@ -2,8 +2,15 @@ package decorator;
 
 import static decorator.Constants.MOCHA_PRICE;
 
-public class Mocha {
+public class Mocha extends Beverage{
+    private Beverage beverage;
+
+    public Mocha(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    @Override
     public Double cost() {
-        return MOCHA_PRICE;
+        return beverage.cost() + MOCHA_PRICE;
     }
 }
