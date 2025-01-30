@@ -1,5 +1,7 @@
 package decorator;
 
+import static decorator.Constants.MILK_PRICE;
+
 public class Milk extends CondimentDecorator{
 
     public Milk(Beverage beverage) {
@@ -8,6 +10,6 @@ public class Milk extends CondimentDecorator{
 
     @Override
     public Double cost() {
-        return beverage.cost() +1.;
+        return beverage.cost() +MILK_PRICE;
     }
 }
