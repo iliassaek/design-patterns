@@ -25,4 +25,11 @@ public class StarBuzzTest {
         assertThat(cup.cost(), is(2.));
     }
 
+    @Test
+    void espresso_with_milk_and_mocha_have_the_right_price(){
+        Beverage espresso = new Espresso();
+        Beverage cup = new Mocha(new Milk(espresso));
+        assertThat(cup.cost(), is(2.5));
+    }
+
 }
