@@ -33,4 +33,10 @@ public class StarBuzzTest {
         assertThat(cup.cost(), is(MILK_PRICE+MOCHA_PRICE+ESPRESSO_PRICE));
     }
 
+    @Test
+    void espresso_description(){
+        Beverage espresso = new Espresso();
+        assertThat(espresso.getDescription(), is("This is Espresso"));
+    }
+
 }
