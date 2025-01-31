@@ -39,4 +39,11 @@ public class StarBuzzTest {
         assertThat(espresso.getDescription(), is("This is Espresso"));
     }
 
+    @Test
+    void espresso_milk_description(){
+        Beverage cup = new Milk(new Espresso());
+        assertThat(cup.getDescription(), is("This is Espresso + Milk"));
+
+    }
+
 }

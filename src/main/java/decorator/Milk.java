@@ -10,7 +10,7 @@ public class Milk extends CondimentDecorator{
 
     @Override
     public String getDescription() {
-        return null;
+        return beverage.getDescription() + " + Milk";
     }
 
     @Override
