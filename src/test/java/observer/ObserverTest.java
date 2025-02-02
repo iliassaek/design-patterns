@@ -16,12 +16,25 @@ public class ObserverTest {
         display2 = new WeatherDisplay();
     }
     @Test
-    void test(){
+    void observers_are_notified(){
         weatherStation.addObserver(display1);
         weatherStation.addObserver(display2);
 
         weatherStation.setTemperature(25.f);
-        assertThat(display1.getTemperature(), is(25.f));
-        assertThat(display2.getTemperature(), is(25.f));
+        assertThat(display1.display(), is(25.f));
+        assertThat(display2.display(), is(25.f));
+    }
+
+    @Test
+    void old_value_when_unsubscribed(){
+        weatherStation.addObserver(display1);
+        weatherStation.addObserver(display2);
+
+        weatherStation.setTemperature(25.f);
+        weatherStation.removeObserver(display1);
+        weatherStation.setTemperature(26.f);
+
+        assertThat(display1.display(), is(25.f));
+        assertThat(display2.display(), is(26.f));
     }
 }
