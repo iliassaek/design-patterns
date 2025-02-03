@@ -2,6 +2,9 @@ package observer;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static observer.Constants.COLD_TEMPERATURE;
+import static observer.Constants.HOT_TEMPERATURE;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 public class ObserverTest {
@@ -19,22 +22,22 @@ public class ObserverTest {
     void observers_are_notified(){
         weatherStation.addObserver(display1);
         weatherStation.addObserver(display2);
+        weatherStation.setTemperature(COLD_TEMPERATURE);
 
-        weatherStation.setTemperature(25.f);
-        assertThat(display1.display(), is(25.f));
-        assertThat(display2.display(), is(25.f));
+        assertThat(display1.display(), is(COLD_TEMPERATURE));
+        assertThat(display2.display(), is(COLD_TEMPERATURE));
     }
 
     @Test
     void old_value_when_unsubscribed(){
         weatherStation.addObserver(display1);
         weatherStation.addObserver(display2);
+        weatherStation.setTemperature(COLD_TEMPERATURE);
 
-        weatherStation.setTemperature(25.f);
         weatherStation.removeObserver(display1);
-        weatherStation.setTemperature(26.f);
+        weatherStation.setTemperature(HOT_TEMPERATURE);
 
-        assertThat(display1.display(), is(25.f));
-        assertThat(display2.display(), is(26.f));
+        assertThat(display1.display(), is(COLD_TEMPERATURE));
+        assertThat(display2.display(), is(HOT_TEMPERATURE));
     }
 }
