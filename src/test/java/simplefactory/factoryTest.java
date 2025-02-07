@@ -12,4 +12,10 @@ public class factoryTest {
         Pizza pizza = ProductFactory.createPizza("Cheese");
         assertThat(pizza, is(notNullValue()));
     }
+
+    @Test
+    void cheese_pizza_has_the_right_type(){
+        Pizza pizza = ProductFactory.createPizza("Cheese");
+        assertThat(pizza.getType(),is("cheese and a lot of mozzarilla"));
+    }
 }
