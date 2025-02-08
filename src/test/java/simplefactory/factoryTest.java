@@ -19,4 +19,11 @@ public class factoryTest {
         Pizza pizza = ProductFactory.createPizza(CHEESE_NAME);
         assertThat(pizza.getType(),is(CHEESE_TYPE));
     }
+
+    @Test
+    void vegetarian_pizza_has_the_right_type(){
+        Pizza pizza = ProductFactory.createPizza("vegetarian");
+        assertThat(pizza.getType(), is("vegetarian"));
+
+    }
 }
