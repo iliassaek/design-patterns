@@ -1,10 +1,10 @@
 package simplefactory;
 
-import static simplefactory.Constants.CHEESE_TYPE;
+import static simplefactory.Constants.CHEESE_DESCRIPTION;
 
 public class CheesePizza implements Pizza{
     @Override
-    public String getType() {
-        return CHEESE_TYPE;
+    public String getDescription() {
+        return CHEESE_DESCRIPTION;
     }
 }

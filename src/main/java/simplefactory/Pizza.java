@@ -1,5 +1,5 @@
 package simplefactory;
 
 public interface Pizza {
-    String getType();
+    String getDescription();
 }
