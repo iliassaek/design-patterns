@@ -1,8 +1,10 @@
 package simplefactory;
 
+import static simplefactory.Constants.VEGETARIAN_DESCRIPTION;
+
 public class VegetarianPizza implements Pizza{
     @Override
     public String getDescription() {
-        return "vegetarian";
+        return VEGETARIAN_DESCRIPTION;
     }
 }

@@ -6,4 +6,5 @@ public class Constants {
     static String CHEESE_DESCRIPTION = "cheese and a lot of mozzarilla";
 
     static String VEGETARIAN_TYPE = "vegetarian";
+    static String VEGETARIAN_DESCRIPTION = "carrots and tomatoes";
 }

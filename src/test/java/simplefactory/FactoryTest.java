@@ -6,7 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static simplefactory.Constants.*;
 
-public class factoryTest {
+public class FactoryTest {
 
     @Test
     void test_cheese_pizza(){
@@ -23,7 +23,7 @@ public class factoryTest {
     @Test
     void vegetarian_pizza_has_the_right_type(){
         Pizza pizza = ProductFactory.createPizza(VEGETARIAN_TYPE);
-        assertThat(pizza.getDescription(), is("vegetarian"));
+        assertThat(pizza.getDescription(), is(VEGETARIAN_DESCRIPTION));
 
     }
 }
