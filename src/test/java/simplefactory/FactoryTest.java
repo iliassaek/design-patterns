@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static simplefactory.Constants.*;
 
 public class FactoryTest {
@@ -25,5 +26,11 @@ public class FactoryTest {
         Pizza pizza = ProductFactory.createPizza(VEGETARIAN_TYPE);
         assertThat(pizza.getDescription(), is(VEGETARIAN_DESCRIPTION));
 
+    }
+
+    //TODO: add text for illegal exception
+    @Test
+    void assert_exception_for_wrong_type(){
+        assertThrows(IllegalArgumentException.class, () -> ProductFactory.createPizza("mimi"));
     }
 }
