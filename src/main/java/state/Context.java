@@ -1,13 +1,13 @@
 package state;
 
 public class Context {
-    private State a;
+    private State state;
 
     public Context(ConcreteStateA a) {
-        this.a = a;
+        this.state = a;
     }
 
     public State getState(){
-        return new ConcreteStateA();
+        return this.state;
     }
 }

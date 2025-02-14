@@ -3,6 +3,7 @@ package state;
 import org.junit.jupiter.api.Test;
 
 
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StatePatternTest {
@@ -12,7 +13,6 @@ public class StatePatternTest {
     public void testInitialState() {
         // Start with ConcreteStateA.
         Context context = new Context(new ConcreteStateA());
-        assertTrue(context.getState() instanceof ConcreteStateA,
-                "Initial state should be ConcreteStateA");
+        assertTrue(context.getState() instanceof ConcreteStateA, "Initial state should be ConcreteStateA");
     }
 }
