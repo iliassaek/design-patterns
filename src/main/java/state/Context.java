@@ -7,11 +7,15 @@ public class Context {
         this.state = a;
     }
 
+    public void setState(State state){
+        this.state = state;
+    }
+
     public State getState(){
         return this.state;
     }
 
     public void request(){
-        this.state = new ConcreteStateB();
+        this.state.handle(this);
     }
 }
