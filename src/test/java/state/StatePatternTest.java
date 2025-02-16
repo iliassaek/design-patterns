@@ -34,7 +34,7 @@ public class StatePatternTest {
         // First request: should transition to ConcreteStateB.
         context.request();
 
-        // Second request: should transition to ConcreteStateB
+        // Second request: should transition to ConcreteStateA
         context.request();
 
         assertThat("After first request, state should be ConcreteStateA", context.getState(), instanceOf(ConcreteStateA.class));
