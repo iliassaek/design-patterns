@@ -58,7 +58,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 If you have any questions, issues, or feedback, please feel free to:
 
-- **Open an issue** on the [GitHub repository](https://github.com/iliassaek/design-patterns/issues)
+- **Open an issue** on the [GitHub issues](https://github.com/iliassaek/design-patterns/issues)
 - **Email me** directly at [iliassek.dev@example.com](mailto:iliassaek.dev@gmail.com)
 
 Your contributions and suggestions are welcome!
