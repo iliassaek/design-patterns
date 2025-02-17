@@ -8,7 +8,6 @@ This project demonstrates common design patterns in Java using a Test-Driven Dev
 - [Prerequisites](#prerequisites)
 - [Installation and Build Instructions](#installation-and-build-instructions)
 - [Running the Tests](#running-the-tests)
-- [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
 - [Contact](#contact)
 
