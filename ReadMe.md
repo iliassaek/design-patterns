@@ -42,9 +42,14 @@ The project includes implementations of the following design patterns:
     git clone git@github.com:iliassaek/design-patterns.git
     ```
 1. **Install project**
-   ```
+   ```bash
    mvn install
    ```
+## Running the tests
+   ```bash
+   mvn test
+   ```
+
    
 ## License
 
