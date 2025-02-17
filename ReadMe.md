@@ -37,9 +37,24 @@ The project includes implementations of the following design patterns:
 
 ## Installation and Build Instructions
 
-### Using Maven
-
 1. **Clone the repository:**
     ```bash
     git clone git@github.com:iliassaek/design-patterns.git
     ```
+1. **Install project**
+   ```
+   mvn install
+   ```
+   
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as long as you adhere to the terms of the license.
+
+## Contact
+
+If you have any questions, issues, or feedback, please feel free to:
+
+- **Open an issue** on the [GitHub repository](https://github.com/iliassaek/design-patterns/issues)
+- **Email me** directly at [your.email@example.com](mailto:iliassaek.dev@gmail.com)
+
+Your contributions and suggestions are welcome!
