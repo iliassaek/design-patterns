@@ -4,7 +4,6 @@ This project demonstrates common design patterns in Java using a Test-Driven Dev
 ## Table of Contents
 - [Overview](#overview)
 - [Design Patterns Implemented](#design-patterns-implemented)
-- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installation and Build Instructions](#installation-and-build-instructions)
 - [Running the Tests](#running-the-tests)
